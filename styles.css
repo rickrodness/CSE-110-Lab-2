@@ -1,0 +1,142 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* CSS Variables with fallback */
+:root {
+    --primary-color: #4a90e2; /* Fallback if the custom properties are not supported */
+    --secondary-color: #f96;
+}
+
+/* Using CSS Variables */
+h1, h2 {
+    color: var(--primary-color, blue);
+}
+
+/* External background image */
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Inline CSS example - to be added directly in HTML for demonstration */
+/* <div style="color: var(--secondary-color, orange);">This is an inline CSS example.</div> */
+
+/* Internal CSS example */
+<style>
+    .internal-css {
+        border: 1px solid var(--primary-color);
+    }
+</style>
+
+/* Box Model - using both long and shorthand notation */
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Borders */
+nav {
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+/* Text styling */
+p {
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Display properties */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Positioning */
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+/* Pseudo-classes and advanced selectors */
+a:hover, a:active {
+    color: var(--secondary-color);
+}
+
+/* Flexbox */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS Selectors */
+.class-selector {
+    background-color: #ececec;
+}
+
+#id-selector {
+    margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Using new :has() selector */
+div:has(> p.special) {
+    border: 2px solid red;
+}
+
+/* Nested selector */
+nav li > a {
+    text-decoration: none;
+    color: black;
+}
+
