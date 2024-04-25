@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A recap of a personal training session including attendance, workout plan, and performance review.">
     <title>Personal Training Session Recap</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -51,10 +52,11 @@
 
         <div>
             <span>Notes from the trainer</span>
-            <p>Today Richard performed well! We worked on mobility and strength training.</p>
+            <p><strong>Today Richard performed well!</strong> We worked on mobility and strength training.</p>
+            <hr>
             <details>
-                <summary>Expand to view exercise tips</summary>
-                <p>Make sure to warm up before each session to avoid injuries.</p>
+                <summary><em>Expand to view exercise tips</em></summary>
+                <p><b>Make sure to warm up</b> before each session to avoid injuries.</p>
                 <p>Stay hydrated. Remember hydration happens yesterday.</p>
             </details>
         </div>
@@ -92,12 +94,26 @@
             <label for="feedback">Session Feedback:</label>
             <textarea id="feedback" name="feedback"></textarea><br><br>
             <input type="submit" value="Submit Feedback">
+            <input type="checkbox" id="confirm" name="confirm">
+            <label for="confirm">Confirm information</label><br>
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" id="unsatisfied" name="satisfaction" value="unsatisfied">
+            <label for="unsatisfied">Unsatisfied</label>
+            <select name="trainer">
+                <option value="rick">Rick</option>
+                <option value="jane">Jane</option>
+            </select>
+            <button type="button">Click me!</button>
         </fieldset>
     </form>
     
     <footer>
         <p>© 2024 Rick's Gym - Personal Training Team</p>
     </footer>
+
+</body>
+</html>
 
 </body>
 </html>
